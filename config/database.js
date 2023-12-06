@@ -1,3 +1,3 @@
 module.exports = {
-    url : "mongodb+srv://parthshahps921:Parth%234321@clusterweb.klums.mongodb.net/sample_mflix"
+    url : "mongodb+srv://meetsoni784:admin@cluster0.lrkxg.mongodb.net/sample_mflix"
 };

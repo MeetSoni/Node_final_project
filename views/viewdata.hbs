@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  {{> header}}
+
+<h1>Sales Data</h1>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                {{!-- <th>Number</th> --}}
+                {{!-- {{ movieData }} --}}
+                <th> Index</th>
+      
+                <th>Plot</th>
+                <th>genres</th>
+                <th>runtime</th>
+                <th>rated</th>
+                <th>cast</th>
+                <th>poster</th>
+                <th>title</th>
+                <th>fullplot</th>
+                <th>language</th>
+                <th>released</th>
+                <th>directors</th>
+                <th>writers</th>
+                <th>awards</th>
+                <th>lastupdated</th>
+                <th>year</th>
+                <th>imdb</th>
+                <th>countries</th>
+                <th>type</th>
+                <th>tomatoes</th>
+               
+
+            </tr>
+        </thead>
+        <tbody>
+          
+            {{#each movieData}}
+            
+            <tr>
+                <td>{{ @index}}</td>
+                  <td>{{ this.plot }}</td>
+                  <td>{{ this.genres }}</td>
+                  <td>{{ this.runtime }}</td>
+                  <td>{{ this.rated }}</td>
+                  <td>{{ this.cast }}</td>
+                  <td><img src="{{ this.poster }}" alt=""></td>
+                  <td>{{ this.title }}</td>
+                  <td>{{ this.fullplot }}</td>
+                  <td>{{ this.language }}</td>
+                  <td>{{ this.released }}</td>
+                  <td>{{ this.directors }}</td>
+                  <td>{{ this.writers }}</td>
+                  <td>{{ this.awards }}</td>
+                  <td>{{ this.lastupdated }}</td>
+                  <td>{{ this.year }}</td>
+                  <td>{{ this.imdb }}</td>
+                  <td>{{ this.countries }}</td>
+                  <td>{{ this.type }}</td>
+                  <td>{{ this.tomatoes }}</td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              
+                </td> 
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+{{> footer}}
+
+
+</body>
+</html>
+
