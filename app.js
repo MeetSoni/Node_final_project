@@ -105,7 +105,7 @@ async function startServer() {
   try {
     await movieDB.initialize(process.env.my_url);
 
-    // await movieDB.getAllMovies();
+    await movieDB.AllMovies();
 
 
     // await movieDB.getMovieById("573a1393f29313caabcdcda1");
